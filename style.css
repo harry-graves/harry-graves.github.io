@@ -1,0 +1,175 @@
+/* ---------- Base ---------- */
+:root {
+  --bg: #faf8f4;
+  --text: #2b2b2b;
+  --text-muted: #6a6a66;
+  --accent: #2f4a5f;
+  --border: #e4dfd5;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--bg);
+}
+
+h1, h2, h3, p, dl, dd { margin: 0; }
+ul { margin: 0; padding: 0; list-style: none; }
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  text-underline-offset: 3px;
+}
+a:hover { text-decoration-color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.container { width: min(720px, 100% - 3rem); margin-inline: auto; }
+
+/* ---------- Header ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+  gap: 1rem;
+  width: min(920px, 100% - 3rem);
+}
+
+.logo {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-links { display: flex; gap: 1.5rem; }
+.nav-links a {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--text); }
+.nav-links a.active { border-bottom: 1px solid var(--accent); padding-bottom: 2px; }
+
+.nav-toggle {
+  display: none;
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--text);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+}
+
+/* ---------- Intro ---------- */
+.intro { padding: 5.5rem 0 3rem; }
+
+.intro h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 6vw, 3rem);
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 0.4rem;
+}
+
+.role { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+.lead { font-size: 1.1rem; margin-bottom: 1.5rem; }
+.links { color: var(--text-muted); }
+.links span { margin: 0 0.4rem; }
+
+/* ---------- Sections ---------- */
+.section { padding: 2.5rem 0; border-top: 1px solid var(--border); }
+.section:first-of-type { border-top: 0; }
+
+.section h2 {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.section p + p { margin-top: 1rem; }
+.note { color: var(--text-muted); font-size: 0.95rem; }
+
+/* ---------- Entries (experience, projects, education) ---------- */
+.entry { margin-bottom: 2rem; }
+.entry:last-child { margin-bottom: 0; }
+
+.entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.2rem 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.entry h3 { font-size: 1.02rem; font-weight: 600; }
+.date { font-size: 0.88rem; color: var(--text-muted); white-space: nowrap; }
+
+.entry p { color: var(--text); }
+.entry p + ul { margin-top: 0.5rem; }
+
+.entry ul { list-style: disc; padding-left: 1.2rem; }
+.entry li { margin-bottom: 0.3rem; }
+.entry li::marker { color: var(--text-muted); }
+
+/* ---------- Skills ---------- */
+.skills { display: grid; grid-template-columns: 9rem 1fr; gap: 0.8rem 1.5rem; }
+.skills dt { font-weight: 600; }
+.skills dd { color: var(--text); }
+
+/* ---------- Footer ---------- */
+.footer {
+  padding: 2rem 0 3rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 760px) {
+  .nav-toggle { display: block; }
+
+  .nav { flex-wrap: wrap; padding: 0.6rem 0; }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.8rem 0 0.4rem;
+  }
+  .nav-links.open { display: flex; }
+
+  .skills { grid-template-columns: 1fr; gap: 0.1rem; }
+  .skills dd { margin-bottom: 0.8rem; }
+
+  .intro { padding-top: 3.5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

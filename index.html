@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harry Graves</title>
+  <meta name="description" content="Harry Graves is an engineer with an MEng from the University of Oxford, working in machine learning, computer vision and signal processing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#top" class="logo">Harry Graves</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INTRO -->
+    <section class="intro container">
+      <h1>Harry Graves</h1>
+      <p class="role">Machine learning engineer and co-founder of Autotone</p>
+      <p class="lead">
+        I'm an engineer based in Oxford with an MEng in Engineering Science from the University of Oxford.
+        My work focuses on machine learning, computer vision and signal processing.
+      </p>
+      <p class="links">
+        <a href="mailto:harryjames.graves@gmail.com">Email me</a>
+        <span aria-hidden="true">·</span>
+        <a href="#projects">See my projects</a>
+      </p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>
+        I recently graduated from the University of Oxford with an MEng in Engineering Science (2:1). My
+        projects there ranged from understanding scenes through AR glasses to separating music into its
+        component sources using transformers.
+      </p>
+      <p>
+        Alongside my studies I've done research in neural rendering at Huazhong University of Science and
+        Technology, worked on SLAM tooling at the Oxford Robotics Institute, and developed machine vision
+        techniques for anti-air systems at Quell. I'm now co-founding Autotone, which uses machine learning to
+        estimate guitar effect settings from audio.
+      </p>
+      <p>
+        Outside of engineering, I sing and play guitar in a local band, Head Height, and was president of the
+        St Anne's College football club.
+      </p>
+      <p class="note">
+        Dual British and Irish national. DBS Level 2 security clearance.
+      </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container">
+      <h2>Experience</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Co-founder &amp; ML Engineer, Autotone</h3>
+          <span class="date">June 2025 – present</span>
+        </div>
+        <ul>
+          <li>Commercialising my third-year design project: machine-learned guitar effect parameter estimation.</li>
+          <li>Developing novel hybrid waveform-spectrogram transformer models for guitar tone embedding.</li>
+          <li>Winners of the Reuben College Entrepreneurship Forum 2025 pitch competition, awarded a £30,000 prize.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Machine Vision Engineering Intern, Quell</h3>
+          <span class="date">August – October 2025</span>
+        </div>
+        <ul>
+          <li>Researched and developed novel machine learning techniques for anti-air systems.</li>
+          <li>Used a simulator to generate synthetic data and experimented with its use in pretraining and finetuning.</li>
+          <li>Flew several quadcopter and fixed-wing drones, capturing and annotating images of them for training.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Research Intern, Oxford Robotics Institute</h3>
+          <span class="date">September – October 2024</span>
+        </div>
+        <ul>
+          <li>Developed ROS2 compatibility for Meta's Project Aria AR research glasses, for use with an online SLAM system.</li>
+          <li>Benchmarked localisation performance against offline bundle-adjustment methods.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Research Intern, Huazhong University of Science and Technology</h3>
+          <span class="date">June – August 2024</span>
+        </div>
+        <ul>
+          <li>Developed and tested neural rendering technologies, including 3D Gaussian Splatting and NeRFs, to model the university's campus in Wuhan, China.</li>
+          <li>Prototyped software that uses these 3D reconstructions for virtual campus tours.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Engineering Design Intern, IPS – Integrated Project Services</h3>
+          <span class="date">June – September 2023</span>
+        </div>
+        <ul>
+          <li>Developed design skills including CAD, engineering drawing and technical specification writing.</li>
+          <li>Worked on and visited several active projects, including new vaccine and drug production facilities.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Egocentric semantic scene understanding</h3>
+          <span class="date">Master's thesis, 78%</span>
+        </div>
+        <p>
+          Used Meta's Project Aria AR glasses to explore semantic scene understanding from a first-person
+          view. I trained an LSTM to detect hand-object interactions from hand- and eye-tracking data.
+        </p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Music source separation</h3>
+          <span class="date">Third-year project, 76%</span>
+        </div>
+        <p>
+          Separated music into its component sources using transformers and panning angle isolation. This
+          project went on to become the starting point for Autotone.
+        </p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Autotone</h3>
+          <span class="date">2025 – present</span>
+        </div>
+        <p>
+          A machine-learning approach to estimating guitar effect parameters, using hybrid waveform-spectrogram
+          transformer models to embed guitar tone. The team won the Reuben College Entrepreneurship Forum 2025
+          pitch competition and a £30,000 prize.
+        </p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Campus reconstruction with neural rendering</h3>
+          <span class="date">Summer 2024</span>
+        </div>
+        <p>
+          Modelled the Huazhong University of Science and Technology campus in Wuhan using 3D Gaussian
+          Splatting and NeRFs, and prototyped virtual campus tours using the results.
+        </p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Project Aria and ROS2</h3>
+          <span class="date">Autumn 2024</span>
+        </div>
+        <p>
+          Added ROS2 support for Meta's Project Aria glasses so they could feed an online SLAM system, then
+          benchmarked its localisation against offline bundle-adjustment methods.
+        </p>
+      </article>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section container">
+      <h2>Education and awards</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>University of Oxford, St Anne's College</h3>
+          <span class="date">October 2021 – July 2025</span>
+        </div>
+        <p>MEng Engineering Science, upper second-class honours (2:1). Specialised in machine learning, computer vision and signal processing.</p>
+        <ul>
+          <li>Master's thesis: 78%. Third-year project: 76%.</li>
+          <li>IET Future Talent Awards scholar and Fung scholar.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Bishop Vesey's Sixth Form, Sutton Coldfield</h3>
+          <span class="date">September 2019 – July 2021</span>
+        </div>
+        <p>A-levels: Mathematics A*, Physics A*, Chemistry A*.</p>
+        <ul>
+          <li>National runner-up in the RAF engineering award Schools Aerospace Challenge, awarded £1,000.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Bishop Walsh Catholic School, Sutton Coldfield</h3>
+          <span class="date">September 2014 – July 2019</span>
+        </div>
+        <p>GCSEs: eight grade 9s including English and Mathematics, one grade 8, one grade 6, and FSMQ Mathematics.</p>
+      </article>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2>Skills and interests</h2>
+      <dl class="skills">
+        <dt>Programming</dt>
+        <dd>Python, C++, ROS2, CAD</dd>
+
+        <dt>Machine learning</dt>
+        <dd>Transformers, LSTMs, synthetic data, pretraining and finetuning, neural rendering</dd>
+
+        <dt>Vision and robotics</dt>
+        <dd>Computer vision, SLAM, 3D Gaussian Splatting, NeRFs</dd>
+
+        <dt>Signal processing</dt>
+        <dd>Music source separation, audio embeddings</dd>
+
+        <dt>Languages</dt>
+        <dd>English (native), Spanish (B2 intermediate)</dd>
+
+        <dt>Music</dt>
+        <dd>Vocalist and guitarist for the local band Head Height since 2020, organising gigs in and around Birmingham with promoters and other bands.</dd>
+
+        <dt>Sport</dt>
+        <dd>President of the St Anne's College football club: managing the budget, running weekly training and organising matches.</dd>
+      </dl>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>
+        If you'd like to talk about machine learning, computer vision, audio or an opportunity, please get in
+        touch at <a href="mailto:harryjames.graves@gmail.com">harryjames.graves@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="year"></span> Harry Graves</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
