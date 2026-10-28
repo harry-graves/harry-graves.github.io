@@ -29,13 +29,23 @@
 
     <!-- INTRO -->
     <section class="hero container">
-      <h1>Harry Graves</h1>
-      <p class="tagline">Machine learning engineer</p>
-      <p class="hero-text">
-        <!-- TODO: replace with your own brief intro. -->
-        Hi! I'm Harry, an engineer based in the UK with an MEng in Engineering Science from the University of Oxford.
-        I specialise in applying machine learning to solve real engineering problems across robotics, computer vision and signal processing.
-      </p>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>Harry Graves</h1>
+          <p class="tagline">Machine learning engineer</p>
+          <p class="hero-text">
+            <!-- TODO: replace with your own brief intro. -->
+            Hi! I'm Harry, an engineer based in the UK with an MEng in Engineering Science from the University of Oxford.
+            I specialise in applying machine learning to solve real engineering problems across robotics, computer vision,
+            audio and signal processing.
+          </p>
+        </div>
+
+        <img
+            src="figures/Graduation Headshot.jpeg"
+            alt="Portrait of Harry Graves"
+            class="headshot" />
+      </div>
     </section>
 
     <section id="projects" class="section container">
@@ -44,22 +54,24 @@
       <!-- PROJECT 1: AUTOTONE -->
       <article id="autotone" class="project">
         <h3 class="project-title">Autotone</h3>
+        <h4 class="project-subtitle">Co-founder and ML Engineer</h4>
 
         <div class="prose">
-          <!-- TODO: expand this description as you see fit. -->
           <p>
-            Autotone is a start-up using machine learning to estimate guitar effect parameters directly from
-            audio, so that a player can recreate a tone they hear without tweaking settings by hand. It grew out
-            of my third-year project on music source separation, and we are developing hybrid
-            waveform-spectrogram transformer models to embed guitar tone.
+            Autotone is an Oxford spin-out that I co-founded alongside three other engineering coursemates. 
+            What started as a research project grew into a commercial venture after we raised £35k in
+            equity-free grants for the commercialisation of our work.
+          </p>
+          <p>
+
+            We are developing an app that will allow guitarists to emulate the tone of their favourite
+            musicians without investing thousands in hardware. Check out our demo video below to find out more.
           </p>
         </div>
 
         <dl class="facts">
           <div>
             <dt>Funding</dt>
-            <!-- TODO: confirm this figure. Your CV lists the £30,000 prize from the Reuben College
-                Entrepreneurship Forum 2025 pitch competition; add any other money raised. -->
             <dd>£30,000 won at the Reuben College Entrepreneurship Forum 2025 pitch competition</dd>
           </div>
           <div>
@@ -87,7 +99,8 @@
 
       <!-- PROJECT 2: MASTER'S THESIS -->
       <article id="thesis" class="project">
-        <h3 class="project-title">Master's thesis</h3>
+        <h3 class="project-title">Object-level Semantic Mapping with Language Models from Egocentric Video</h3>
+        <p class="project-subtitle">Masters Thesis<p>
 
         <div class="prose">
           <!-- TODO: refine this description and add the thesis title. -->
@@ -121,7 +134,8 @@
 
       <!-- PROJECT 3: SYNTHETIC DATA -->
       <article id="synthetic-data" class="project">
-        <h3 class="project-title">Synthetic data generation</h3>
+        <h3 class="project-title">Synthetic Training Data for Aerial Object Classification</h3>
+        <h4 class="project-subtitle">Machine Vision Engineering Internship</h4>
 
         <div class="prose">
           <!-- Kept deliberately general: the company is a defence start-up and would not want details shared.
@@ -179,7 +193,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year"></span> Harry Graves · Oxford, UK</p>
+      <!--<p>© <span id="year"></span> Harry Graves · Oxford, UK</p> -->
     </div>
   </footer>
 
