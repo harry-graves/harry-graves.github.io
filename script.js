@@ -5,20 +5,18 @@
   const toggle = document.getElementById("navToggle");
   const links = document.getElementById("navLinks");
 
-  function close() {
+  const close = () => {
     links.classList.remove("open");
     toggle.setAttribute("aria-expanded", "false");
-  }
+  };
 
   toggle.addEventListener("click", () => {
-    const isOpen = links.classList.toggle("open");
-    toggle.setAttribute("aria-expanded", String(isOpen));
+    const open = links.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(open));
   });
 
-  links.querySelectorAll("a").forEach((link) => link.addEventListener("click", close));
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") close();
-  });
+  links.querySelectorAll("a").forEach((a) => a.addEventListener("click", close));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
 })();
 
 /* ---------- Highlight the current section in the nav ---------- */

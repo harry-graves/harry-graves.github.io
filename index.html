@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harry Graves</title>
-  <meta name="description" content="Harry Graves is an engineer with an MEng from the University of Oxford, working in machine learning, computer vision and signal processing." />
+  <title>Harry Graves | Machine Learning Engineer</title>
+  <meta name="description" content="Portfolio of Harry Graves, an Oxford MEng Engineering Science graduate specialising in machine learning, computer vision and signal processing." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,257 +15,172 @@
   <header class="site-header" id="top">
     <nav class="nav container" aria-label="Main navigation">
       <a href="#top" class="logo">Harry Graves</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cv">CV</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+
     <!-- INTRO -->
-    <section class="intro container">
+    <section class="hero container">
       <h1>Harry Graves</h1>
-      <p class="role">Machine learning engineer and co-founder of Autotone</p>
-      <p class="lead">
-        I'm an engineer based in Oxford with an MEng in Engineering Science from the University of Oxford.
-        My work focuses on machine learning, computer vision and signal processing.
-      </p>
-      <p class="links">
-        <a href="mailto:harryjames.graves@gmail.com">Email me</a>
-        <span aria-hidden="true">·</span>
-        <a href="#projects">See my projects</a>
+      <p class="tagline">Machine learning engineer</p>
+      <p class="hero-text">
+        <!-- TODO: replace with your own brief intro. -->
+        Hi! I'm Harry, an engineer based in the UK with an MEng in Engineering Science from the University of Oxford.
+        I specialise in applying machine learning to solve real engineering problems across robotics, computer vision and signal processing.
       </p>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section container">
-      <h2>About</h2>
-      <p>
-        I recently graduated from the University of Oxford with an MEng in Engineering Science (2:1). My
-        projects there ranged from understanding scenes through AR glasses to separating music into its
-        component sources using transformers.
-      </p>
-      <p>
-        Alongside my studies I've done research in neural rendering at Huazhong University of Science and
-        Technology, worked on SLAM tooling at the Oxford Robotics Institute, and developed machine vision
-        techniques for anti-air systems at Quell. I'm now co-founding Autotone, which uses machine learning to
-        estimate guitar effect settings from audio.
-      </p>
-      <p>
-        Outside of engineering, I sing and play guitar in a local band, Head Height, and was president of the
-        St Anne's College football club.
-      </p>
-      <p class="note">
-        Dual British and Irish national. DBS Level 2 security clearance.
-      </p>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section container">
-      <h2>Experience</h2>
-
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Co-founder &amp; ML Engineer, Autotone</h3>
-          <span class="date">June 2025 – present</span>
-        </div>
-        <ul>
-          <li>Commercialising my third-year design project: machine-learned guitar effect parameter estimation.</li>
-          <li>Developing novel hybrid waveform-spectrogram transformer models for guitar tone embedding.</li>
-          <li>Winners of the Reuben College Entrepreneurship Forum 2025 pitch competition, awarded a £30,000 prize.</li>
-        </ul>
-      </article>
-
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Machine Vision Engineering Intern, Quell</h3>
-          <span class="date">August – October 2025</span>
-        </div>
-        <ul>
-          <li>Researched and developed novel machine learning techniques for anti-air systems.</li>
-          <li>Used a simulator to generate synthetic data and experimented with its use in pretraining and finetuning.</li>
-          <li>Flew several quadcopter and fixed-wing drones, capturing and annotating images of them for training.</li>
-        </ul>
-      </article>
-
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Research Intern, Oxford Robotics Institute</h3>
-          <span class="date">September – October 2024</span>
-        </div>
-        <ul>
-          <li>Developed ROS2 compatibility for Meta's Project Aria AR research glasses, for use with an online SLAM system.</li>
-          <li>Benchmarked localisation performance against offline bundle-adjustment methods.</li>
-        </ul>
-      </article>
-
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Research Intern, Huazhong University of Science and Technology</h3>
-          <span class="date">June – August 2024</span>
-        </div>
-        <ul>
-          <li>Developed and tested neural rendering technologies, including 3D Gaussian Splatting and NeRFs, to model the university's campus in Wuhan, China.</li>
-          <li>Prototyped software that uses these 3D reconstructions for virtual campus tours.</li>
-        </ul>
-      </article>
-
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Engineering Design Intern, IPS – Integrated Project Services</h3>
-          <span class="date">June – September 2023</span>
-        </div>
-        <ul>
-          <li>Developed design skills including CAD, engineering drawing and technical specification writing.</li>
-          <li>Worked on and visited several active projects, including new vaccine and drug production facilities.</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- PROJECTS -->
     <section id="projects" class="section container">
-      <h2>Projects</h2>
+      <h2 class="section-title">Projects</h2>
 
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Egocentric semantic scene understanding</h3>
-          <span class="date">Master's thesis, 78%</span>
+      <!-- PROJECT 1: AUTOTONE -->
+      <article id="autotone" class="project">
+        <h3 class="project-title">Autotone</h3>
+
+        <div class="prose">
+          <!-- TODO: expand this description as you see fit. -->
+          <p>
+            Autotone is a start-up using machine learning to estimate guitar effect parameters directly from
+            audio, so that a player can recreate a tone they hear without tweaking settings by hand. It grew out
+            of my third-year project on music source separation, and we are developing hybrid
+            waveform-spectrogram transformer models to embed guitar tone.
+          </p>
         </div>
-        <p>
-          Used Meta's Project Aria AR glasses to explore semantic scene understanding from a first-person
-          view. I trained an LSTM to detect hand-object interactions from hand- and eye-tracking data.
+
+        <dl class="facts">
+          <div>
+            <dt>Funding</dt>
+            <!-- TODO: confirm this figure. Your CV lists the £30,000 prize from the Reuben College
+                Entrepreneurship Forum 2025 pitch competition; add any other money raised. -->
+            <dd>£30,000 won at the Reuben College Entrepreneurship Forum 2025 pitch competition</dd>
+          </div>
+          <div>
+            <dt>Role</dt>
+            <dd>Co-founder &amp; ML Engineer, June 2025 – present</dd>
+          </div>
+          <div>
+            <dt>Website</dt>
+            <!-- TODO: replace the href with the real Autotone URL. -->
+            <dd><a href="https://www.autotone.io" class="text-link" target="_blank" rel="noopener">Visit the Autotone website</a></dd>
+          </div>
+        </dl>
+
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/homIWbsJtZw"
+            title="Autotone demo video"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </article>
+
+      <!-- PROJECT 2: MASTER'S THESIS -->
+      <article id="thesis" class="project">
+        <h3 class="project-title">Master's thesis</h3>
+
+        <div class="prose">
+          <!-- TODO: refine this description and add the thesis title. -->
+          <p>
+            My master's thesis explored egocentric semantic scene understanding using Meta's Project Aria AR
+            glasses. I trained an LSTM to detect hand-object interactions from hand- and eye-tracking data,
+            working out what a wearer is doing from where they look and how they move their hands. The thesis
+            was awarded 78%.
+          </p>
+        </div>
+
+        <div class="figures">
+          <figure>
+            <!-- TODO: replace this placeholder with a figure from your thesis, e.g.
+                <img src="images/thesis-figure-1.png" alt="Description of the figure" /> -->
+            <div class="placeholder">Thesis figure 1</div>
+            <figcaption>Figure 1: caption describing what this figure shows.</figcaption>
+          </figure>
+          <figure>
+            <!-- TODO: replace with <img src="images/thesis-figure-2.png" alt="..." /> -->
+            <div class="placeholder">Thesis figure 2</div>
+            <figcaption>Figure 2: caption describing what this figure shows.</figcaption>
+          </figure>
+        </div>
+
+        <p class="download">
+          <!-- TODO: put your thesis PDF at files/thesis.pdf, or change the path. -->
+          <a href="files/4th_Year_Project_Report___Harry_Graves.pdf" class="btn" download>Download the thesis (PDF)</a>
         </p>
       </article>
 
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Music source separation</h3>
-          <span class="date">Third-year project, 76%</span>
-        </div>
-        <p>
-          Separated music into its component sources using transformers and panning angle isolation. This
-          project went on to become the starting point for Autotone.
-        </p>
-      </article>
+      <!-- PROJECT 3: SYNTHETIC DATA -->
+      <article id="synthetic-data" class="project">
+        <h3 class="project-title">Synthetic data generation</h3>
 
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Autotone</h3>
-          <span class="date">2025 – present</span>
+        <div class="prose">
+          <!-- Kept deliberately general: the company is a defence start-up and would not want details shared.
+              Check the wording with them before publishing. -->
+          <p>
+            During an internship at a defence technology start-up, I worked on machine vision and investigated
+            whether synthetic data from a simulator could improve model performance. I experimented with using
+            it for pretraining and finetuning, and also captured and annotated real images to train and test the
+            models. For confidentiality, I can only share a high-level overview here.
+          </p>
         </div>
-        <p>
-          A machine-learning approach to estimating guitar effect parameters, using hybrid waveform-spectrogram
-          transformer models to embed guitar tone. The team won the Reuben College Entrepreneurship Forum 2025
-          pitch competition and a £30,000 prize.
-        </p>
-      </article>
 
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Campus reconstruction with neural rendering</h3>
-          <span class="date">Summer 2024</span>
+        <div class="figures">
+          <figure>
+            <!-- TODO: replace with <img src="images/synthetic-1.png" alt="..." /> -->
+            <div class="placeholder">Synthetic image 1</div>
+            <figcaption>Example of a generated synthetic image.</figcaption>
+          </figure>
+          <figure>
+            <!-- TODO: replace with <img src="images/synthetic-2.png" alt="..." /> -->
+            <div class="placeholder">Synthetic image 2</div>
+            <figcaption>Example of a generated synthetic image.</figcaption>
+          </figure>
         </div>
-        <p>
-          Modelled the Huazhong University of Science and Technology campus in Wuhan using 3D Gaussian
-          Splatting and NeRFs, and prototyped virtual campus tours using the results.
-        </p>
-      </article>
 
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Project Aria and ROS2</h3>
-          <span class="date">Autumn 2024</span>
-        </div>
-        <p>
-          Added ROS2 support for Meta's Project Aria glasses so they could feed an online SLAM system, then
-          benchmarked its localisation against offline bundle-adjustment methods.
-        </p>
+        <figure class="wide">
+          <!-- TODO: replace with <img src="images/results-improvement.png" alt="..." /> -->
+          <div class="placeholder tall">Results figure</div>
+          <figcaption>Improvement in results when using synthetic data. Add a one-line description of what is being compared.</figcaption>
+        </figure>
       </article>
     </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="section container">
-      <h2>Education and awards</h2>
+    <!-- CONCLUSION + CV -->
+    <section id="cv" class="section container">
+      <h2 class="section-title">Get in touch</h2>
 
-      <article class="entry">
-        <div class="entry-head">
-          <h3>University of Oxford, St Anne's College</h3>
-          <span class="date">October 2021 – July 2025</span>
-        </div>
-        <p>MEng Engineering Science, upper second-class honours (2:1). Specialised in machine learning, computer vision and signal processing.</p>
-        <ul>
-          <li>Master's thesis: 78%. Third-year project: 76%.</li>
-          <li>IET Future Talent Awards scholar and Fung scholar.</li>
-        </ul>
-      </article>
+      <div class="prose">
+        <!-- TODO: replace with your own short conclusion. -->
+        <p>
+          Thank you for taking the time to look through my work. If you'd like more detail on my education and
+          experience, you can download my CV below. I'm always happy to talk about machine learning, computer
+          vision and audio.
+        </p>
+      </div>
 
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Bishop Vesey's Sixth Form, Sutton Coldfield</h3>
-          <span class="date">September 2019 – July 2021</span>
-        </div>
-        <p>A-levels: Mathematics A*, Physics A*, Chemistry A*.</p>
-        <ul>
-          <li>National runner-up in the RAF engineering award Schools Aerospace Challenge, awarded £1,000.</li>
-        </ul>
-      </article>
-
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Bishop Walsh Catholic School, Sutton Coldfield</h3>
-          <span class="date">September 2014 – July 2019</span>
-        </div>
-        <p>GCSEs: eight grade 9s including English and Mathematics, one grade 8, one grade 6, and FSMQ Mathematics.</p>
-      </article>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section container">
-      <h2>Skills and interests</h2>
-      <dl class="skills">
-        <dt>Programming</dt>
-        <dd>Python, C++, ROS2, CAD</dd>
-
-        <dt>Machine learning</dt>
-        <dd>Transformers, LSTMs, synthetic data, pretraining and finetuning, neural rendering</dd>
-
-        <dt>Vision and robotics</dt>
-        <dd>Computer vision, SLAM, 3D Gaussian Splatting, NeRFs</dd>
-
-        <dt>Signal processing</dt>
-        <dd>Music source separation, audio embeddings</dd>
-
-        <dt>Languages</dt>
-        <dd>English (native), Spanish (B2 intermediate)</dd>
-
-        <dt>Music</dt>
-        <dd>Vocalist and guitarist for the local band Head Height since 2020, organising gigs in and around Birmingham with promoters and other bands.</dd>
-
-        <dt>Sport</dt>
-        <dd>President of the St Anne's College football club: managing the budget, running weekly training and organising matches.</dd>
-      </dl>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section container">
-      <h2>Contact</h2>
-      <p>
-        If you'd like to talk about machine learning, computer vision, audio or an opportunity, please get in
-        touch at <a href="mailto:harryjames.graves@gmail.com">harryjames.graves@gmail.com</a>.
+      <p class="download">
+        <!-- TODO: put your CV PDF at files/harry-graves-cv.pdf, or change the path. -->
+        <a href="files/Harry Graves' CV (September 2026).pdf" class="btn" download>Download my CV (PDF)</a>
+        <a href="mailto:harryjames.graves@gmail.com" class="text-link">harryjames.graves@gmail.com</a>
       </p>
     </section>
+
   </main>
 
-  <iframe src="YOUR_SPLAT_VIEWER_URL" width="100%" height="500px" frameborder="0"></iframe>
-
-  <footer class="footer container">
-    <p>© <span id="year"></span> Harry Graves</p>
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Harry Graves · Oxford, UK</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
