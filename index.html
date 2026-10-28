@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harry Graves | Machine Learning Engineer</title>
+  <title>Harry Graves | ML Portfolio</title>
   <meta name="description" content="Portfolio of Harry Graves, an Oxford MEng Engineering Science graduate specialising in machine learning, computer vision and signal processing." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,8 +20,8 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
+        <li><a href="#top">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#cv">CV</a></li>
       </ul>
     </nav>
   </header>
@@ -39,6 +39,12 @@
             I specialise in applying machine learning to solve real engineering problems across robotics, computer vision,
             audio and signal processing.
           </p>
+          <ul class="hero-links" aria-label="Contact and profile links">
+            <li><a href="files/Harry Graves' CV (September 2026).pdf" class="text-link" target="_blank" rel="noopener">CV</a></li>
+            <li><a href="mailto:harryjames.graves@gmail.com" class="text-link">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/harrygraves" class="text-link" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/harry-graves" class="text-link" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
         </div>
 
         <img
@@ -88,29 +94,49 @@
 
         <div class="prose">
           <p>
-            I did my masters thesis at the Oxford Robotics Institute, in the Dynamic Robot Systems group under
-            Prof. Maurice Fallon. The robotics platform I worked with was rather unconventional — Meta's Project
-            Aria AR Research Glasses.
+            I did my masters thesis at the
+            <a href="https://ori.ox.ac.uk/" class="text-link">Oxford Robotics Institute</a>
+            in the
+            <a href="https://dynamic.robots.ox.ac.uk/" class="text-link">Dynamic Robot Systems</a>
+            group under Prof. Maurice Fallon. The robotics platform I worked with was rather unconventional — Meta's
+            <a href="https://www.projectaria.com" class="text-link">Project Aria</a>
+            AR Research Glasses.
+          </p>
+          <p>
+            This work explored how hand-object interactions can be detected from egocentric video, 
+            as part of the group's wider research into change detection and scene understanding. I trained an LSTM on sliding windows
+            of hand- and eye-tracking data to predict when the user is interacting with an object, and an
+            open-vocabulary Vision-Language Model to identify the type of object. I combined this with the
+            glasses' SLAM data to determine the 3D position of objects over time, and maintain a
+            semantic memory of interactions for downstream querying with an LLM to answer questions such as
+            "Where did I leave my keys?" or "Did I turn the oven off?"
+          </p>
+          <p>
+            View the full thesis
+            <a href="files/4th_Year_Project_Report___Harry_Graves.pdf" class="text-link" target="_blank" rel="noopener noreferrer">
+              here.
+            </a>
           </p>
         </div>
 
         <div class="figures">
           <figure>
-            <!-- TODO: replace this placeholder with a figure from your thesis, e.g.
-                 <img src="images/thesis-figure-1.png" alt="Description of the figure" /> -->
-            <div class="placeholder">Thesis figure 1</div>
-            <figcaption>Figure 1: caption describing what this figure shows.</figcaption>
+            <img src="figures/aria.png" alt="Aria sensors" />
+            <figcaption>Figure 1: Project Aria's sensor suite.</figcaption>
           </figure>
           <figure>
-            <!-- TODO: replace with <img src="images/thesis-figure-2.png" alt="..." /> -->
-            <div class="placeholder">Thesis figure 2</div>
-            <figcaption>Figure 2: caption describing what this figure shows.</figcaption>
+            <img src="figures/mps.png" alt="ORI kitchen pointcloud" />
+            <figcaption>Figure 2: Point cloud of the ORI kitchen, and device trajectory.</figcaption>
           </figure>
         </div>
 
-        <p class="download">
-          <a href="files/4th_Year_Project_Report___Harry_Graves.pdf" class="btn" download>Download the thesis (PDF)</a>
-        </p>
+        <div class="figures">
+          <figure>
+            <img src="figures/hot3d.jpg" alt="HOT3D dataset" />
+            <figcaption>Figure 3: The HOT3D dataset, used as ground-truth and test data.</figcaption>
+          </figure>
+        </div>
+
       </article>
 
       <!-- Project 3: Synthetic data generation -->
@@ -150,33 +176,14 @@
       </article>
     </section>
 
-    <!-- ===== CONCLUSION + CV ===== -->
-    <section id="cv" class="section container">
-      <h2 class="section-title">Get in touch</h2>
-
-      <div class="prose">
-        <!-- TODO: replace with your own short conclusion. -->
-        <p>
-          Thank you for taking the time to look through my work. If you'd like more detail on my education and
-          experience, you can download my CV below. I'm always happy to talk about machine learning, computer
-          vision and audio.
-        </p>
-      </div>
-
-      <p class="download">
-        <a href="files/Harry Graves' CV (September 2026).pdf" class="btn" download>Download my CV (PDF)</a>
-        <a href="mailto:harryjames.graves@gmail.com" class="text-link">harryjames.graves@gmail.com</a>
-      </p>
-    </section>
-
   </main>
 
   <!-- ===== FOOTER ===== -->
-  <footer class="footer">
+  <!-- footer class="footer">
     <div class="container">
-      <!-- <p>© <span id="year"></span> Harry Graves · Oxford, UK</p> -->
+      < <p>© <span id="year"></span> Harry Graves · Oxford, UK</p>
     </div>
-  </footer>
+  </footer> -->
 
   <script src="script.js"></script>
 </body>
