@@ -12,6 +12,7 @@
 </head>
 <body>
 
+  <!-- ===== HEADER ===== -->
   <header class="site-header" id="top">
     <nav class="nav container" aria-label="Main navigation">
       <a href="#top" class="logo">Harry Graves</a>
@@ -27,14 +28,13 @@
 
   <main>
 
-    <!-- INTRO -->
+    <!-- ===== INTRO ===== -->
     <section class="hero container">
       <div class="hero-inner">
         <div class="hero-copy">
           <h1>Harry Graves</h1>
           <p class="tagline">Machine learning engineer</p>
           <p class="hero-text">
-            <!-- TODO: replace with your own brief intro. -->
             Hi! I'm Harry, an engineer based in the UK with an MEng in Engineering Science from the University of Oxford.
             I specialise in applying machine learning to solve real engineering problems across robotics, computer vision,
             audio and signal processing.
@@ -42,48 +42,32 @@
         </div>
 
         <img
-            src="figures/Graduation Headshot.jpeg"
-            alt="Portrait of Harry Graves"
-            class="headshot" />
+          src="figures/Graduation Headshot.jpeg"
+          alt="Portrait of Harry Graves"
+          class="headshot" />
       </div>
     </section>
 
+    <!-- ===== PROJECTS ===== -->
     <section id="projects" class="section container">
       <h2 class="section-title">Projects</h2>
 
-      <!-- PROJECT 1: AUTOTONE -->
+      <!-- Project 1: Autotone -->
       <article id="autotone" class="project">
         <h3 class="project-title">Autotone</h3>
-        <h4 class="project-subtitle">Co-founder and ML Engineer</h4>
+        <p class="project-subtitle">Co-founder and ML Engineer</p>
 
         <div class="prose">
           <p>
-            Autotone is an Oxford spin-out that I co-founded alongside three other engineering coursemates. 
-            What started as a research project grew into a commercial venture after we raised £35k in
+            Autotone is an Oxford spin-out that I co-founded alongside three other engineering coursemates.
+            What started as a research project grew into a commercial venture after we raised £35,000 in
             equity-free grants for the commercialisation of our work.
           </p>
           <p>
-
             We are developing an app that will allow guitarists to emulate the tone of their favourite
-            musicians without investing thousands in hardware. Check out our demo video below to find out more.
+            musicians using AI, removing the need to invest thousands in hardware. Check out our demo video below to find out more.
           </p>
         </div>
-
-        <dl class="facts">
-          <div>
-            <dt>Funding</dt>
-            <dd>£30,000 won at the Reuben College Entrepreneurship Forum 2025 pitch competition</dd>
-          </div>
-          <div>
-            <dt>Role</dt>
-            <dd>Co-founder &amp; ML Engineer, June 2025 – present</dd>
-          </div>
-          <div>
-            <dt>Website</dt>
-            <!-- TODO: replace the href with the real Autotone URL. -->
-            <dd><a href="https://www.autotone.io" class="text-link" target="_blank" rel="noopener">Visit the Autotone website</a></dd>
-          </div>
-        </dl>
 
         <div class="video">
           <iframe
@@ -97,25 +81,23 @@
         </div>
       </article>
 
-      <!-- PROJECT 2: MASTER'S THESIS -->
+      <!-- Project 2: Master's thesis -->
       <article id="thesis" class="project">
         <h3 class="project-title">Object-level Semantic Mapping with Language Models from Egocentric Video</h3>
-        <p class="project-subtitle">Masters Thesis<p>
+        <p class="project-subtitle">Masters Thesis</p>
 
         <div class="prose">
-          <!-- TODO: refine this description and add the thesis title. -->
           <p>
-            My master's thesis explored egocentric semantic scene understanding using Meta's Project Aria AR
-            glasses. I trained an LSTM to detect hand-object interactions from hand- and eye-tracking data,
-            working out what a wearer is doing from where they look and how they move their hands. The thesis
-            was awarded 78%.
+            I did my masters thesis at the Oxford Robotics Institute, in the Dynamic Robot Systems group under
+            Prof. Maurice Fallon. The robotics platform I worked with was rather unconventional — Meta's Project
+            Aria AR Research Glasses.
           </p>
         </div>
 
         <div class="figures">
           <figure>
             <!-- TODO: replace this placeholder with a figure from your thesis, e.g.
-                <img src="images/thesis-figure-1.png" alt="Description of the figure" /> -->
+                 <img src="images/thesis-figure-1.png" alt="Description of the figure" /> -->
             <div class="placeholder">Thesis figure 1</div>
             <figcaption>Figure 1: caption describing what this figure shows.</figcaption>
           </figure>
@@ -127,19 +109,18 @@
         </div>
 
         <p class="download">
-          <!-- TODO: put your thesis PDF at files/thesis.pdf, or change the path. -->
           <a href="files/4th_Year_Project_Report___Harry_Graves.pdf" class="btn" download>Download the thesis (PDF)</a>
         </p>
       </article>
 
-      <!-- PROJECT 3: SYNTHETIC DATA -->
+      <!-- Project 3: Synthetic data generation -->
       <article id="synthetic-data" class="project">
         <h3 class="project-title">Synthetic Training Data for Aerial Object Classification</h3>
-        <h4 class="project-subtitle">Machine Vision Engineering Internship</h4>
+        <p class="project-subtitle">Machine Vision Engineering Internship</p>
 
         <div class="prose">
           <!-- Kept deliberately general: the company is a defence start-up and would not want details shared.
-              Check the wording with them before publishing. -->
+               Check the wording with them before publishing. -->
           <p>
             During an internship at a defence technology start-up, I worked on machine vision and investigated
             whether synthetic data from a simulator could improve model performance. I experimented with using
@@ -169,7 +150,7 @@
       </article>
     </section>
 
-    <!-- CONCLUSION + CV -->
+    <!-- ===== CONCLUSION + CV ===== -->
     <section id="cv" class="section container">
       <h2 class="section-title">Get in touch</h2>
 
@@ -183,7 +164,6 @@
       </div>
 
       <p class="download">
-        <!-- TODO: put your CV PDF at files/harry-graves-cv.pdf, or change the path. -->
         <a href="files/Harry Graves' CV (September 2026).pdf" class="btn" download>Download my CV (PDF)</a>
         <a href="mailto:harryjames.graves@gmail.com" class="text-link">harryjames.graves@gmail.com</a>
       </p>
@@ -191,9 +171,10 @@
 
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
-      <!--<p>© <span id="year"></span> Harry Graves · Oxford, UK</p> -->
+      <!-- <p>© <span id="year"></span> Harry Graves · Oxford, UK</p> -->
     </div>
   </footer>
 

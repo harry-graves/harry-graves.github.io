@@ -38,5 +38,6 @@
   update();
 })();
 
-/* ---------- Footer year ---------- */
-document.getElementById("year").textContent = new Date().getFullYear();
+/* ---------- Footer year (only if the footer contains an element with id="year") ---------- */
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
