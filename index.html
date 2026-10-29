@@ -148,31 +148,29 @@
           <!-- Kept deliberately general: the company is a defence start-up and would not want details shared.
                Check the wording with them before publishing. -->
           <p>
-            During an internship at a defence technology start-up, I worked on machine vision and investigated
-            whether synthetic data from a simulator could improve model performance. I experimented with using
-            it for pretraining and finetuning, and also captured and annotated real images to train and test the
-            models. For confidentiality, I can only share a high-level overview here.
+            During an internship at defence startup
+            <a href="https://www.quell.scot" class="text-link">Quell</a>
+            I experimented with how synthetic data could be used to train aerial object detection and
+            classification models. I used the Unity game engine and Unity Perception Package to generate
+            and annotate images at scale, then performed ablation studies comparing model performance when
+            trained on varying proportions of synthetic and real data.
+          </p>
+          <p>
+            For security and confidentiality reasons, I can only give a high-level overview here.
           </p>
         </div>
 
         <div class="figures">
           <figure>
-            <!-- TODO: replace with <img src="images/synthetic-1.png" alt="..." /> -->
-            <div class="placeholder">Synthetic image 1</div>
-            <figcaption>Example of a generated synthetic image.</figcaption>
+            <img src="figures/synthetic.png" alt="Synthetic Aerial Image" />
+            <figcaption>Example of a synthetic image generated with Unity.</figcaption>
           </figure>
           <figure>
-            <!-- TODO: replace with <img src="images/synthetic-2.png" alt="..." /> -->
-            <div class="placeholder">Synthetic image 2</div>
-            <figcaption>Example of a generated synthetic image.</figcaption>
+            <img src="figures/segmentation.png" alt="Segmentation" />
+            <figcaption>The corresponding segmentation generated with Unity Perception.</figcaption>
           </figure>
         </div>
 
-        <figure class="wide">
-          <!-- TODO: replace with <img src="images/results-improvement.png" alt="..." /> -->
-          <div class="placeholder tall">Results figure</div>
-          <figcaption>Improvement in results when using synthetic data. Add a one-line description of what is being compared.</figcaption>
-        </figure>
       </article>
     </section>
 
